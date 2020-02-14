@@ -1,3 +1,6 @@
+/**
+ * Integrantes: Frank Saca, Jeferson Cueva, Isaias Silva
+ */
 package taller_repeticion;
 public class Factorial {
     // variables globales

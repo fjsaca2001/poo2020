@@ -1,3 +1,6 @@
+/**
+ * Integrantes: Frank Saca, Jeferson Cueva, Isaias Silva
+ */
 package taller_repeticion;
 
 import java.util.Scanner;
