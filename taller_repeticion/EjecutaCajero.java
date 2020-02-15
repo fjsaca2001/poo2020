@@ -8,11 +8,13 @@ import java.util.Scanner;
 public class EjecutaCajero {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
+        System.out.println("Ingrese su nombre: ");
+        String nombre = teclado.nextLine();
         System.out.println("Ingresar el saldo inicial de la cuenta");
         int saldo_inicial = teclado.nextInt();
         teclado.nextLine();
         //Creacion del objeto
-        Cajero cajero = new Cajero(saldo_inicial);
+        Cajero cajero = new Cajero(saldo_inicial,nombre);
 
         int op = 0;
 

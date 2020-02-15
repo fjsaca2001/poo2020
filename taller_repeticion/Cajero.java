@@ -6,17 +6,27 @@ package taller_repeticion;
 public class Cajero {
 
     private int saldo;
+    private String nombre;
 
     /**
      * constructor para la clase Cajero
      * @param saldo
      */
-    public Cajero (int saldo){
+    public Cajero (int saldo, String nombre){
         this.saldo = saldo;
+        this.nombre = nombre;
 
     }
     public int consultar_saldo() {
         return saldo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     /**
@@ -42,5 +52,4 @@ public class Cajero {
         }
 
     }
-
 }
