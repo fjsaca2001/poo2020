@@ -1,14 +1,14 @@
 package arreglosDeberPoo;
 public class Conversor {
     // declaracion de variables globales
-    private int binario;
+    private String binario;
     private int suma;
     // establer el valor ingresado por el usuario
-    public int getBinario() {
+    public String getBinario() {
         return binario;
     }
 
-    public void setBinario(int binario) {
+    public void setBinario(String binario) {
         this.binario = binario;
     }
 
@@ -21,12 +21,14 @@ public class Conversor {
     }
 
     // creacion del constructor conversor
-    public Conversor(int binario){
+    public Conversor(String binario){
         this.binario = binario;
     }
 
     // metodo para obtener el decimal
     public void obtenerDecimal(){
+        // paso de cadena a entero
+        int binario1 = Integer.parseInt(binario);
         // Arreglo usado para almacear los valores por separado
         int[] binarioDecimal = new int[6];
         // contador usado para el for siguiente
@@ -34,8 +36,8 @@ public class Conversor {
         // ciclo usado para el almacenamiento de los datos unitarios
         for (int i = 0; i < binarioDecimal.length ; i++) {
             // asignacion de valores desde el ultimo hasta el primero
-            // formula para obtener el ultimo valor de la cedula
-            binarioDecimal[c] = (int)((binario/Math.pow(10,i))%10);
+            // formula para obtener el ultimo digito
+            binarioDecimal[c] = (int)((binario1/Math.pow(10,i))%10);
             // decremento del contador
             c--;
         }

@@ -5,7 +5,7 @@ public class EjecutaConversor {
         Scanner entrada = new Scanner(System.in);
         // entrada de datos
         System.out.println("Ingrese un numero binario de 6 digitos");
-        int numBinario = entrada.nextInt();
+        String numBinario = entrada.nextLine();
         // creacion del objeto
         Conversor binario = new Conversor(numBinario);
         // calculo del decimal
